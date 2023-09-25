@@ -108,6 +108,7 @@
         "@types/node-fetch": "^2.5.7"
     },
     "dependencies": {
+        "dropbox": "^10.34.0",
         "node-fetch": "^2.6.1"
     }
 }

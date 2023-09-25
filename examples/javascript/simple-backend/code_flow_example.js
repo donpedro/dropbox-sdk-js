@@ -9,10 +9,19 @@ const app = require('express')();
 const hostname = 'localhost';
 const port = 3000;
 
+
+// const config = {
+  // clientId: 'APP_KEY_HERE',
+  // clientSecret: 'APP_SECRET_HERE',
+  // accessToken: "access_token_here", 
+  // refreshToken: "refresh_token_here", // (retrieved from "Token Result" in ./code_flow_example.js):
+// };
+let localConfig = require('../config.local.json')
+
 const config = {
   fetch,
-  clientId: 'APP_KEY_HERE',
-  clientSecret: 'APP_SECRET_HERE',
+  clientId: localConfig.clientId,
+  clientSecret: localConfig.clientSecret
 };
 
 const { Dropbox } = require('dropbox'); // eslint-disable-line import/no-unresolved
