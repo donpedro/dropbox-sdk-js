@@ -16,6 +16,15 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "Dropbox upload & append",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\examples\\javascript\\node\\uploadAppend.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "Dropbox code_flow_example",
             "skipFiles": [
                 "<node_internals>/**"
